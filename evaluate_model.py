@@ -6,7 +6,7 @@ from sklearn.model_selection import LeaveOneOut, cross_val_predict
 
 df = pd.read_csv("nasa_battery_data.csv")
 
-features = ["cycle", "voltage", "current", "temperature", "capacity"]
+features = ["cycle", "voltage", "current", "temperature"]
 X = df[features]
 y = df["soh"]
 
